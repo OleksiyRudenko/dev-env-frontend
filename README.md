@@ -51,16 +51,20 @@ project useful to make your life easier.
 ## Must have
 
 Install the following
+ * **Node Version Manager** for
+   [Windows](https://github.com/coreybutler/nvm-windows#overview)
+   or [Linux/Mac](https://github.com/nvm-sh/nvm#installing-and-updating)
+   (trust me, you will need it) and run `./bash-nvm.sh`
  * [node.js+npm](https://nodejs.org/en/download/)
  * Optional: [yarn](https://yarnpkg.com/en/docs/install) or 
    [pnpm](https://pnpm.js.org/docs/en/installation.html);
    
-   **Worth reading:** [`npm` vs `yarn` vs `pnpm`](https://www.alexkras.com/understanding-differences-between-npm-yarn-and-pnpm/);
+> **Worth reading:** [`npm` vs `yarn` vs `pnpm`](https://www.alexkras.com/understanding-differences-between-npm-yarn-and-pnpm/);
    
-   **A note re `pnpm`:** Under Windows `pnpm` may require that packages
-   repository and projects are located on the same hard drive
-   (`pnpm` uses hard links, and Windows poses certain restrictions; 
-   please, google for details or trust the above)
+> **A note re `pnpm`:** Under Windows `pnpm` may require that packages
+> repository and projects are located on the same hard drive
+> (`pnpm` uses hard links, and Windows poses certain restrictions; 
+> please, google for details or trust the above)
  
 ## Almost must have
 
