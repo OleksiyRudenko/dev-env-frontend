@@ -50,22 +50,33 @@ project useful to make your life easier.
 
 ## Must have
 
+Decide which NodeJS version manager you want to use.
+You will definitely need one as various projects you will work with
+will require different NodeJS version.
+
+Latest recommendation (as of this doc update) is to use [fnm](https://github.com/Schniz/fnm).
+Although setting up `fnm` may require quite an effort.
+When you are ready to give up, go for `nvm`.
+
 Install the following
- * **Node Version Manager** for
-   [Windows](https://github.com/coreybutler/nvm-windows#overview)
-   or [Linux/Mac](https://github.com/nvm-sh/nvm#installing-and-updating)
-   (trust me, you will need it) and run `./bash-nvm.sh`
+ * **Node Version Manager** for either
+   * `nvm`:
+     [Windows](https://github.com/coreybutler/nvm-windows#overview)
+     or [Linux/Mac](https://github.com/nvm-sh/nvm#installing-and-updating) and run `./bash-nvm.sh`
+   * `fnm`: https://github.com/Schniz/fnm?tab=readme-ov-file#installation
+     and run `./bash-fnm.sh`
  * [node.js+npm](https://nodejs.org/en/download/)
- * Optional: [yarn](https://yarnpkg.com/en/docs/install) or 
+   using `fnm` or `nvm`,
+ * Optional: [yarn](https://yarnpkg.com/en/docs/install) or
    [pnpm](https://pnpm.js.org/docs/en/installation.html);
-   
+
 > **Worth reading:** [`npm` vs `yarn` vs `pnpm`](https://www.alexkras.com/understanding-differences-between-npm-yarn-and-pnpm/);
-   
+
 > **A note re `pnpm`:** Under Windows `pnpm` may require that packages
 > repository and projects are located on the same hard drive
-> (`pnpm` uses hard links, and Windows poses certain restrictions; 
+> (`pnpm` uses hard links, and Windows poses certain restrictions;
 > please, google for details or trust the above)
- 
+
 ## Almost must have
 
 Some frontend tools may require building and under Windows you may
@@ -92,7 +103,7 @@ require building from source are:
 [microtime](https://www.npmjs.com/package/microtime),
 [couchbase](https://www.npmjs.com/package/couchbase),
 [bignum](https://www.npmjs.com/package/bignum),
-[kerberos](https://www.npmjs.com/package/kerberos), and 
+[kerberos](https://www.npmjs.com/package/kerberos), and
 [ursa](https://www.npmjs.com/package/ursa).
 The list is taken from
 [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools/blob/master/README.md)
@@ -117,7 +128,7 @@ Execute `xcode-select --install` in your Terminal.
 
 ### Unix/Linux
 
-Install [GCC](https://gcc.gnu.org/). Here is a guide for 
+Install [GCC](https://gcc.gnu.org/). Here is a guide for
 [Ubuntu 18.04](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/).
 Google for a similar guide matching your OS flavour.
 
@@ -142,8 +153,8 @@ How to use:
 
 ### `push-dir`
 
-[`push-dir`](https://www.npmjs.com/package/push-dir) pushes a subtree to 
-a given branch on remote. Useful to publish with GitHub Pages a built 
+[`push-dir`](https://www.npmjs.com/package/push-dir) pushes a subtree to
+a given branch on remote. Useful to publish with GitHub Pages a built
 web app only.
 
 How to use:
